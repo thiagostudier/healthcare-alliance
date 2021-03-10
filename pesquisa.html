@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pesquisa | HomeCare</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="./vendors/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/fonts/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/style.css" />
+	<link href="./vendors/flags/css/flags.css" rel="stylesheet" />
+	<!-- END STYLES -->
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="col-12" id="topo">
+		<div class="row">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<div class="select-language-box col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pt-4 cursor-pointer">
+					<div class="select-language" 
+						data-input-name="country"
+                        data-selected-country="BR"
+                        data-countries='{"BR": "","US": ""}'></div>
+				</div>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<!-- NAVBAR -->
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pl-0 pr-0">
+					<nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
+	  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+	    					<span class="navbar-toggler-icon"></span>
+	  					</button>
+	  					<a class="navbar-brand font-weight-bold mx-auto" href="#">
+	  						<!-- <b><span class="color-blue-dark">healthcare</span><span class="color-blue-light">alliance</span></b> -->
+	  						<img src="./vendors/images/icon.png" alt="Healthcarealliance" height="30px" />
+	  					</a>
+	  					<div class="select-language-box d-md-none d-sm-block d-block">
+							<div class="select-language" 
+								data-input-name="country"
+		                        data-selected-country="BR"
+		                        data-countries='{"BR": "","US": ""}'></div>
+						</div>
+	  					<div class="collapse navbar-collapse" id="navbarNav">
+		    				<ul class="navbar-nav ml-auto">
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Home">Home</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Sobre Nós">Sobre Nós</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Como Funciona">Como Funciona</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Serviços e Produtos">Serviços e Produtos</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Contato">Contato</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link color-blue-light-2" href="#" title="Logout">
+		        						<i class="fa fa-2 fa-sign-out color-blue-light-2" aria-hidden="true"></i>
+		        					</a>
+		      					</li>
+		      					<li class="nav-item d-flex">
+    								<div>
+    									<img class="navbar-img" src="./vendors/images/foto.png" height="35px" alt="Imagem de Perfil" />
+    								</div>
+    								<div>
+    									<a href="#" title="Profile" class="nav-link m-0 p-0 pl-2">
+    										<b>
+    											<i><span class="color-blue-light-2">Olá, </span><br />Antônio Martinez</i>
+    										</b>    										
+    									</a>
+    								</div>
+    							</li>
+		    				</ul>
+		  				</div>						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER -->
+
+	<section class="position-relative pr-xs-0 pl-xs-0 background-waves">
+		<div class="row d-flex align-items-center">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<h4 class="color-blue-dark font-weight-bold list-vertical-text">		
+					Siga-nos
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+				</h4>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<div class="banner-div pt-5 pb-5 pl-4 pr-4 rounded-bottom-left-xs-hidden rounded-bottom-right-xs-hidden">
+					<img class="banner-img banner-img-pesquisa" src="./vendors/images/pesquisa/banner-pesquisa.png" width="100%" />
+					<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 banner-content centralizar-verticalmente mt-2 mb-2 mr-0">
+						<div class="col-lg-7 col-md-7 col-sm-12 text-left pl-0 pr-0">
+							<h1 class="title-carousel color-white mb-4">
+								<b>Nós temos <span class="color-blue-dark">1.368</span> ótimos <br />parceiros aguardando você!</b>
+							</h1>
+							<form class="form-style align-items-baseline col-12 mt-2 pl-0 pr-0">
+	  							<div class="col-12 pr-0 pl-0">
+	    							<input type="text" class="form-control w-100 rounded-top" placeholder="Palavra Chave">
+	  							</div>
+  								<div class="row">
+	  								<div class="col-6 pr-0">
+		    							<select class="form-control w-100 rounded-0" value="categorie">
+		    								<option value="">Categorias</option>
+		    							</select>	
+		  							</div>		  									
+		  							<div class="col-6 pl-0">
+		  								<select class="form-control w-100 rounded-0" value="categorie">
+		    								<option value="">Subcategorias</option>
+		    							</select>	
+		  							</div>
+  								</div>
+  								<div class="row">
+  									<div class="col-7 pr-0">
+	    								<input type="text" class="form-control w-100 rounded-bottom-left-xs-1 rounded-bottom-left-sm-1 rounded-bottom-left-md-1" placeholder="Localização" />
+  									</div>
+  									<div class="col-5 pl-0">
+  										<button type="submit" class="btn w-100 text-truncate rounded-0 cursor-pointer background-blue-dark color-white rounded-bottom-right-md-1 rounded-bottom-right-sm-1 rounded-bottom-right-xs-1"><b>PESQUISAR</b></button>
+  									</div>
+  								</div>
+							</form>
+							<div class="col-12 mt-4 border-list-banner-footer pt-3 pl-0">
+								<p class="font-weight-bold">
+									<a href="" target="_blank" class="color-blue-dark btn-border mr-2">Home</a>
+									<i class="fa fa-angle-right color-blue-dark" aria-hidden="true"></i>
+									<span class="color-white ml-2">Pesquisa</span>
+								</p>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>			
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-12 pt-5 pb-4 item-pesquisa">
+					<h2 class="color-blue-dark mb-4 text-center-xs">
+						<b><i>Sua pesquisa retornou <span class="color-green">450</span> resultados</i></b>
+					</h2>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+							<div class="col-12 rounded-top text-center bg-white pt-4 pb-4">
+								<img  src="./vendors/images/pesquisa/logo-marca.png" />
+							</div>
+							<div class="col-12 rounded-bottom background-gray p-3">
+								<p class="mb-2 text-truncate">
+									<span class="legend color-blue-light">Venda | Manutenção | Locação</span>
+								</p>
+								<p class="mb-0 text-truncate"><b><i>Rf Medical Ltda - Epp</i></b></p>
+								<p class="mb-2 text-truncate"><span class="legend">Belo Horizonte - MG</span></p>
+								<h4>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<span class="legend font-weight-normal">50 Avaliações</span>
+								</h4>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue pt-2 pb-2 text-truncate">VER FORNECEDOR</a></p>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate">PEDIR ORÇAMENTO</a></p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+							<div class="col-12 rounded-top text-center bg-white pt-4 pb-4">
+								<img  src="./vendors/images/pesquisa/logo-marca.png" />
+							</div>
+							<div class="col-12 rounded-bottom background-gray p-3">
+								<p class="mb-2 text-truncate">
+									<span class="legend color-blue-light">Venda | Manutenção | Locação</span>
+								</p>
+								<p class="mb-0 text-truncate"><b><i>Rf Medical Ltda - Epp</i></b></p>
+								<p class="mb-2 text-truncate"><span class="legend">Belo Horizonte - MG</span></p>
+								<h4>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<span class="legend font-weight-normal">50 Avaliações</span>
+								</h4>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue pt-2 pb-2 text-truncate">VER FORNECEDOR</a></p>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate">PEDIR ORÇAMENTO</a></p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+							<div class="col-12 rounded-top text-center bg-white pt-4 pb-4">
+								<img  src="./vendors/images/pesquisa/logo-marca.png" />
+							</div>
+							<div class="col-12 rounded-bottom background-gray p-3">
+								<p class="mb-2 text-truncate">
+									<span class="legend color-blue-light">Venda | Manutenção | Locação</span>
+								</p>
+								<p class="mb-0 text-truncate"><b><i>Rf Medical Ltda - Epp</i></b></p>
+								<p class="mb-2 text-truncate"><span class="legend">Belo Horizonte - MG</span></p>
+								<h4>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<span class="legend font-weight-normal">50 Avaliações</span>
+								</h4>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue pt-2 pb-2 text-truncate">VER FORNECEDOR</a></p>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate">PEDIR ORÇAMENTO</a></p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+							<div class="col-12 rounded-top text-center bg-white pt-4 pb-4">
+								<img  src="./vendors/images/pesquisa/logo-marca.png" />
+							</div>
+							<div class="col-12 rounded-bottom background-gray p-3">
+								<p class="mb-2 text-truncate">
+									<span class="legend color-blue-light">Venda | Manutenção | Locação</span>
+								</p>
+								<p class="mb-0 text-truncate"><b><i>Rf Medical Ltda - Epp</i></b></p>
+								<p class="mb-2 text-truncate"><span class="legend">Belo Horizonte - MG</span></p>
+								<h4>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+									<span class="legend font-weight-normal">50 Avaliações</span>
+								</h4>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue pt-2 pb-2 text-truncate">VER FORNECEDOR</a></p>
+								<p class="text-center text-truncate mb-2"><a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate">PEDIR ORÇAMENTO</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3 mb-3 text-center"> 
+						<p class="legend mx-auto d-block d-sm-block d-md-none"><b>36 páginas</b></p>
+					</div>
+					<div class="row">
+						<nav class="mx-auto">
+  							<ul class="pagination mx-auto">
+    							<li class="page-item">
+      								<a class="page-link transition ml-1 mr-1" href="#" aria-label="Previous">
+        								<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+      								</a>
+    							</li>
+
+    							<li class="page-item mr-3">
+    								<a class="page-link transition ml-1 mr-1" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    							</li>
+
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1 active" href="#">1</a></li>
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1" href="#">2</a></li>
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1" href="#">3</a></li>
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1" href="#">4</a></li>
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1" href="#">5</a></li>
+    							<li class="page-item"><a class="page-link transition ml-1 mr-1" href="#">6</a></li>
+
+    							<li class="page-item ml-3">
+    								<a class="page-link transition ml-1 mr-1" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    							</li>
+    							<li class="page-item">
+      								<a class="page-link transition ml-1 mr-1" href="#" aria-label="Next">
+        								<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+      								</a>
+    							</li>
+    							<li class="d-none d-sm-none d-md-block">
+    								<p class="legend mt-3 ml-3 mb-0"><b>36 páginas</b></p>
+    							</li>
+  							</ul>
+						</nav>
+					</div>	
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center mb-3 d-block d-sm-block d-md-none position-relative overflow-hidden back-degrade color-white pt-4 pb-4 filtro-pesquisa order-1 cursor-pointer" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+					<img src="./vendors/images/banner-filtro.png" class="banner-img" />
+					<h3><b><i>FILTROS</i></b></h3>
+					<h4>Filtre por categoria, tipo de serviço, distância e avaliações.</h4>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5 pb-3 order-1 mb-3 collapse collapse-filtro" id="collapseFilter">
+					<h3 class="ml-4 mb-3"><b><i>Pesquisa Rápida</i></b></h3>
+					<form class="form-style align-items-baseline col-12 mt-2 pl-0 pr-0">
+						<div class="col-12 pr-0 pl-0">
+							<input type="text" class="form-control w-100 rounded-top" placeholder="Palavra Chave">
+						</div>
+						<div class="col-12 pr-0 pl-0">
+							<select class="form-control w-100 rounded-0" value="categorie">
+								<option value="">Categorias</option>
+							</select>
+						</div>
+						<div class="col-12 pr-0 pl-0">
+							<input type="text" class="form-control w-100 rounded-bottom" placeholder="Localização" />	
+						</div>
+					</form>
+
+					<div class="bg-white rounded mt-3 pt-3 pb-3">
+						<h3 class="ml-4 mb-3"><b><i>Categorias</i></b></h3>
+
+						<p class="item-list-pesquisa active mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b>Acessórios e Peças</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Analisadores e simuladores"><b>Analisadores e simuladores</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Hospitalar"><b>Equipamento Hospitalar</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa active mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Assessoria"><b>Assessoria</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Veterinário"><b>Equipamento Veterinário</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Mobiliário"><b>Mobiliário</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa active mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Calibração, Laudos e Testes"><b>Calibração, Laudos e Testes</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamentos Odontológicos"><b>Equipamentos Odontológicos</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Infraestrutura"><b>Infraestrutura</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Laboratorial"><b>Equipamento Laboratorial</b> <span class="legend">500</span></a>
+						</p>
+					</div>
+
+					<div class="bg-white rounded mt-3 col-12 pt-3 pb-3 pl-4 pr-4">
+						<h3 class="mb-3"><b><i>Tipos de Serviço</i></b></h3>
+						<form>						
+							<div class="form-check">
+							  	<input class="form-check-input checkbox-style-black" type="checkbox" value="" id="checkbutton_1">
+							  	<label class="form-check-label cursor-pointer color-gray ml-2 font-italic" for="checkbutton_1">
+							    	<b>Venda</b>
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input checkbox-style-black" type="checkbox" checked="true" value="" id="checkbutton_2">
+							  	<label class="form-check-label cursor-pointer color-gray ml-2 font-italic" for="checkbutton_2">
+							    	<b>Manutenção</b>
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input checkbox-style-black" type="checkbox" value="" id="checkbutton_3">
+							  	<label class="form-check-label cursor-pointer color-gray ml-2 font-italic" for="checkbutton_3">
+							    	<b>Locação</b>
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input checkbox-style-black" type="checkbox" value="" id="checkbutton_4">
+							  	<label class="form-check-label cursor-pointer color-gray ml-2 font-italic" for="checkbutton_4">
+							    	<b>Outros</b>
+							  	</label>
+							</div>	
+						</form>
+					</div>
+
+					<div class="bg-white rounded mt-3 col-12 pt-3 pb-5 pl-4 pr-4">
+						<h3 class="mb-4"><b><i>Distância</i></b></h3>
+
+						<div class="range-slider pt-5">
+							<!-- INPUT RANGES -->
+	  						<input type="range"  min="2" max="20000" value="2">
+	 						<input type="range" min="2" max="20000" value="20000">
+						  	<!-- VALUE -->
+						  	<h4 class="color-gray">
+								<b class="rangeValues min"></b>
+							</h4>
+						</div>
+
+					</div>
+
+					<div class="bg-white rounded mt-3 col-12 pt-3 pb-3 pl-4 pr-4">
+						<h3 class="mb-3"><b><i>Avaliações</i></b></h3>
+						<form class="distancia-calc mx-auto rating text-center">
+    						<input class="invisible position-absolute" type="radio" name="stars" checked value="1" id="star-1"/>
+  							<label for="star-1" class="cursor-pointer star">
+    							<i class="transition star-1 star-2 star-3 star-4 star-5 fa fa-star color-yellow" aria-hidden="true"></i>
+  							</label>
+							<input class="invisible position-absolute" type="radio" name="stars" value="2" id="star-2"/>
+  							<label for="star-2" class="cursor-pointer star">
+							    <i class="transition star-2 star-3 star-4 star-5 fa fa-star-o color-yellow" aria-hidden="true"></i>
+							</label>
+							<input class="invisible position-absolute" type="radio" name="stars" value="3" id="star-3"/>
+							<label for="star-3" class="cursor-pointer star">
+							    <i class="transition star-3 star-4 star-5 fa fa-star-o color-yellow" aria-hidden="true"></i>
+							</label>
+							<input class="invisible position-absolute" type="radio" name="stars" value="4" id="star-4"/>
+							<label for="star-4" class="cursor-pointer star">
+							    <i class="transition star-4 star-5 fa fa-star-o color-yellow" aria-hidden="true"></i>
+							</label>
+							<input class="invisible position-absolute" type="radio" name="stars" value="5" id="star-5"/>
+							<label for="star-5" class="cursor-pointer star">
+							    <i class="transition star-5 fa fa-star-o color-yellow" aria-hidden="true"></i>
+							</label>
+						</form>	
+						<p class="text-center color-gray">
+							<b class="min">* Desmarque todas para ver todos os resultados</b>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="pb-0 background-footer">
+		<div class="footer-datas mb-2 col-md-10 offset-md-1 col-sm-12 col-12 background-blue-light z-index-top margin-top-negative pt-4 pb-4">
+			<div class="col-md-10 offset-md-1 col-sm-12 col-12">
+				<div class="row centralizar-verticalmente">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<a class="navbar-brand font-weight-bold text-truncate" href="#">
+							<img src="./vendors/images/icon-white.png" height="30px" />
+	  					</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+							<i class="icon fa fa-phone color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i> 
+							+55 (11) 3285-5665
+							<span class="color-blue-dark">
+								<!-- Seg-Sex  -->8am-18pm
+							</span>
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+								<i class="icon fa fa-at color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i>
+								contato@healthcarealliance.com.br
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<h4 class="mb-0 text-left text-center-xs d-md-flex d-sm-flex d-inline-block">
+							<b>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+							</b>
+							<div class="select-language-box d-md-block d-sm-none d-none">	
+								<div class="select-language p-0 ml-2" 
+									data-input-name="country"
+	                        		data-selected-country="BR"
+	                        		data-countries='{"BR": "","US": ""}'>	                        		
+	                        	</div>			
+							</div>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 pt-4 pb-4">
+					<div class="row mb-5">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-md-block d-sm-none d-none">
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit. Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Contratantes</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Parceiros</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-12 text-center-xs d-md-none d-block mb-3">
+							<p class="color-white mb-2"><b>Sobre a Healthcarealliance</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Donec condimentum luctus libero et dapibus.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center-xs">
+							<p class="color-white mb-2"><b>Cadastre-se na Newsletter</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis.</p>
+							<form class="form-newsletter">
+		  						<div class="form-row align-items-center">
+		  							<div class="input-group mb-2">
+		    							<input type="mail" class="form-control" placeholder="E-mail">
+		  								<button type="submit" class="btn rounded-0 background-blue-light">
+		  									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		  								</button>
+		  							</div>
+		  						</div>
+							</form>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="col-md-5 pr-0 d-md-block d-sm-none d-none">
+							<ul class="list-inline list-footer border-list-footer">
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Sobre Nós</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Como Funciona</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Parceiros</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Contato</a></b></p></li>
+							</ul>
+						</div>
+						<div class="col-md-7 pl-0 col-12 pl-xs-0">
+							<p class="pt-4 text-right legend color-white mb-0 border-list-footer text-center-xs">
+								<b class="min">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 <span class="color-green">Healthcare Aliance</span>. Desenvolvimento por Hammer Consult.</b>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+					<p class="color-white font-weight-bold list-vertical-text cursor-pointer scroll" data-scroll="topo">		
+						Subir ao topo
+						<i class="fa fa-arrow-up color-green ml-2" aria-hidden="true"></i>
+						<b class="color-green">|</b>
+					</p>
+				</div>				
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="./vendors/js/popper.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery/jquery-3.4.0.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./vendors/slick/slick.js"></script>
+	<script type="text/javascript" src="./vendors/script.js"></script>
+	<script src="./vendors/flags/js/jquery.flagstrap.js"></script>
+	<!-- END SCRIPT -->
+
+</body>
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interna do Fornecedor | HomeCare</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="./vendors/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/fonts/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/style.css" />
+	<link href="./vendors/flags/css/flags.css" rel="stylesheet" />
+	<!-- END STYLES -->
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="col-12" id="topo">
+		<div class="row">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<div class="select-language-box col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pt-4 cursor-pointer">
+					<div class="select-language" 
+						data-input-name="country"
+                        data-selected-country="BR"
+                        data-countries='{"BR": "","US": ""}'></div>
+				</div>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<!-- NAVBAR -->
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pl-0 pr-0">
+					<nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
+	  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+	    					<span class="navbar-toggler-icon"></span>
+	  					</button>
+	  					<a class="navbar-brand font-weight-bold mx-auto" href="#">
+	  						<!-- <b><span class="color-blue-dark">healthcare</span><span class="color-blue-light">alliance</span></b> -->
+	  						<img src="./vendors/images/icon.png" alt="Healthcarealliance" height="30px" />
+	  					</a>
+	  					<div class="select-language-box d-md-none d-sm-block d-block">
+							<div class="select-language" 
+								data-input-name="country"
+		                        data-selected-country="BR"
+		                        data-countries='{"BR": "","US": ""}'></div>
+						</div>
+	  					<div class="collapse navbar-collapse" id="navbarNav">
+		    				<ul class="navbar-nav ml-auto">
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Home">Home</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Sobre Nós">Sobre Nós</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Como Funciona">Como Funciona</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Serviços e Produtos">Serviços e Produtos</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Contato">Contato</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link color-blue-light-2" href="#" title="Logout">
+		        						<i class="fa fa-2 fa-sign-out color-blue-light-2" aria-hidden="true"></i>
+		        					</a>
+		      					</li>
+		      					<li class="nav-item d-flex">
+    								<div>
+    									<img class="navbar-img" src="./vendors/images/foto.png" height="35px" alt="Imagem de Perfil" />
+    								</div>
+    								<div>
+    									<a href="#" title="Profile" class="nav-link m-0 p-0 pl-2">
+    										<b>
+    											<i><span class="color-blue-light-2">Olá, </span><br />Antônio Martinez</i>
+    										</b>    										
+    									</a>
+    								</div>
+    							</li>
+		    				</ul>
+		  				</div>						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER -->
+	<section class="background-waves position-relative">
+		<div class="row d-flex align-items-center">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<h4 class="color-blue-dark font-weight-bold list-vertical-text">		
+					Siga-nos
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+				</h4>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<div class="banner-div pt-5 pb-5 pt-xs-0 pb-xs-0">
+					<!-- BANNER BACKGROUND -->
+					<img class="banner-img" src="./vendors/images/interna-fornecedor/background-banner.png" width="100%" />
+					<!-- end BANNER BACKGROUND -->
+					<!-- BANNER CONTEÚDO -->
+					<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-10 offset-1 banner-content mt-2 mb-2 mr-0 pt-4 pb-4">
+						<div class="row centralizar-verticalmente">
+							<div class="col-md-9">
+								<div class="row centralizar-verticalmente">
+									<div class="col-md-3 offset-md-0 col-sm-6 offset-sm-3 col-6 offset-3 mb-4">
+										<div class="responsive-img rounded-circle background-gray-light overflow-hidden shadow">
+											<img src="./vendors/images/como-funciona/empresa-3.png" title="Logo - Empresa" />
+										</div>
+									</div>
+									<div class="col-md-6 text-center-xs">
+										<p class="mb-1">
+											<small class="background-blue-light rounded text-nowrap p-1 pl-2 pr-2 mb-1 d-inline-block text-white">ANALISADORES / SIMULADORES</small>
+											<small class="background-blue-light rounded text-nowrap p-1 pl-2 pr-2 mb-1 d-inline-block text-white">ASSESSORIA</small>
+											<small class="background-blue-light rounded text-nowrap p-1 pl-2 pr-2 mb-1 d-inline-block text-white">ACESSÓRIOS</small>
+											<small class="background-blue-light rounded text-nowrap p-1 pl-2 pr-2 mb-1 d-inline-block text-white">EQUIPAMENTO HOSPITALAR</small>
+										</p>
+										<h2 class="text-white"><b>Rf Medical Ltda - Epp</b></h2>
+										<p class="text-white mb-4">
+											Belo Horizonte - MG
+											<span class="ml-2 text-nowrap">
+												<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+												<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+												<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+												<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+												<span class="legend font-weight-normal">50 Avaliações</span>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="row">
+									<h4 class="col-12 text-center text-truncate mb-2">
+										<a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate"><b><i>Pedir Orçamento</i></b></a>
+									</h4>
+									<h4 class="col-12 text-center text-truncate mb-2">
+										<a href="#" class="legend btn-border w-100 d-block color-white border-white pt-2 pb-2 text-truncate"><b><i>Retornar a Pesquisa</i></b></a>
+									</h4>											
+								</div>
+							</div>
+						</div>	
+						<div class="col-12 mt-4 border-list-banner-footer border-color-transparent pt-3 pl-0">
+							<div class="row">
+								<div class="col-md-6 col-12 text-center-xs">
+									<p class="font-weight-bold">
+										<a href="#" target="_blank" class="color-green-light btn-border mr-2">Home</a>
+										<i class="fa fa-angle-double-right color-blue-light" aria-hidden="true"></i>
+										<a href="#" target="_blank" class="color-transparent ml-2">Pesquisa</a>
+										<i class="fa fa-angle-double-right color-blue-light" aria-hidden="true"></i>
+										<span class="color-white ml-2">Detalhes da Empresa</span>
+									</p>
+								</div>
+								<div class="col-md-6 col-12 text-center-xs order-1">
+									<p class="color-white text-right text-center-xs d-flew align-items-center text-nowrap text-truncate">
+										Indique este parceiro: 
+										<a href="" target="_blank">
+											<img src="./vendors/images/interna-fornecedor/icon-wpp.png" height="22px" />
+										</a>
+										<a href="" target="_blank">
+											<img src="./vendors/images/interna-fornecedor/icon-fb.png" height="22px" />
+										</a>
+										<a href="" target="_blank">
+											<img src="./vendors/images/interna-fornecedor/icon-tw.png" height="22px" />
+										</a>
+										<a href="" target="_blank">
+											<img src="./vendors/images/interna-fornecedor/icon-gp.png" height="22px" />
+										</a>
+										<a href="" target="_blank">
+											<img src="./vendors/images/interna-fornecedor/icon-in.png" height="22px" />
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>				
+					</div>
+					<!-- end BANNER CONTEÚDO -->
+				</div>
+			</div>			
+		</div>
+		<!-- LISTA MOBILE -->
+		<div class="list-items-interna-fornecedor text-center d-md-none d-sm-block d-block bg-white mb-3">
+			<h5 class="text-uppercase text-nowrap font-italic d-block mx-auto mb-0">
+				<a class="d-inline-block pt-3 pb-3 cursor-pointer nounderline color-gray color-green-hover scroll" data-scroll="descricao">
+					<b class="min pl-1 pr-2">Descrição</b>
+				</a>
+				<a class="d-inline-block pt-3 pb-3 cursor-pointer nounderline color-gray color-green-hover scroll" data-scroll="video">
+					<b class="min pl-1 pr-2">Vídeo</b>
+				</a>
+				<a class="d-inline-block pt-3 pb-3 cursor-pointer nounderline color-gray color-green-hover scroll" data-scroll="categoria">
+					<b class="min pl-1 pr-2">Categorias</b>
+				</a>
+				<a class="d-inline-block pt-3 pb-3 cursor-pointer nounderline color-gray color-green-hover scroll" data-scroll="galeria">
+					<b class="min pl-1 pr-2">Galeria</b>
+				</a>
+				<a class="d-inline-block pt-3 pb-3 cursor-pointer nounderline color-gray color-green-hover scroll" data-scroll="cases">
+					<b class="min pl-1 pr-2">Cases</b>
+				</a>
+			</h5>
+		</div>
+		<div class="container">
+			<!-- LISTA DESKTOP -->
+			<ul class="list-inline list-footer border-list-footer d-md-block d-sm-none d-none border-0 col-12 pl-0 pr-0">
+				<li class="list-inline-item pt-4">
+					<h4 class="text-uppercase mb-0">
+						<i><a class="cursor-pointer pl-4 pr-4 pt-4 nounderline color-gray color-green-hover scroll" data-scroll="descricao"><b class="min">Descrição</b></a></i>
+					</h4>
+				</li>
+				<li class="list-inline-item pt-4">
+					<h4 class="text-uppercase mb-0">
+						<i><a class="cursor-pointer pl-4 pr-4 pt-4 nounderline color-gray color-green-hover scroll" data-scroll="video"><b class="min">Vídeo</b></a></i>
+					</h4>
+				</li>
+				<li class="list-inline-item pt-4">
+					<h4 class="text-uppercase mb-0">
+						<i><a class="cursor-pointer pl-4 pr-4 pt-4 nounderline color-gray color-green-hover scroll" data-scroll="categoria"><b class="min">Categorias</b></a></i>
+					</h4>
+				</li>
+				<li class="list-inline-item pt-4">
+					<h4 class="text-uppercase mb-0">
+						<i><a class="cursor-pointer pl-4 pr-4 pt-4 nounderline color-gray color-green-hover scroll" data-scroll="galeria"><b class="min">Galeria</b></a></i>
+					</h4>
+				</li>
+				<li class="list-inline-item pt-4">
+					<h4 class="text-uppercase mb-0">
+						<i><a class="cursor-pointer pl-4 pr-4 pt-4 nounderline color-gray color-green-hover scroll" data-scroll="cases"><b class="min">Cases</b></a></i>
+					</h4>
+				</li>
+			</ul>
+			<div class="col box-empresa bg-white pt-3 pb-3">
+				<div class="row">
+					<div class="col-12 col-lg-3 text-center-xs">
+						<p class="mb-1 text-nowrap text-truncate">
+							<i><b>Experiência de Mercado:</b> <b class="min color-blue-dark">10 ANOS</b></i>
+						</p>
+					</div>
+					<div class="col-12 col-lg-3 text-center-xs">
+						<p class="mb-1 text-nowrap text-truncate">
+							<i><b>Alvará Sanitário:</b> <b class="min color-blue-dark">20180503111</b></i>
+						</p>
+					</div>
+					<div class="col-12 col-lg-3 text-center-xs">
+						<p class="mb-1 text-nowrap text-truncate">
+							<i><b>Validade do Alvará Sanitário:</b> <b class="min color-blue-dark">20180503111</b></i>
+						</p>
+					</div>
+					<div class="col-12 col-lg-3 text-center-xs">
+						<p class="mb-0 text-nowrap text-truncate">
+							<i><b>Alvará de Funcionamento:</b> <b class="min color-blue-dark">010409731800</b></i>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- BOTÃO SOLICITAR ORÇAMENTO APENAS MOBILA -->
+			<div class="pt-3 pb-1 d-md-none d-sm-block d-block">
+				<h4 class="mb-0">
+					<a href="" class="text-center p-2 d-inline-block w-100 rounded background-blue-light text-white text-truncate"><b><i>SOLICITAR ORÇAMENTO</i></b>
+					</a>
+				</h4>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-md-12 col-sm-12 col-12 pt-3">
+					<!-- SOBRE A EMPRESA -->
+					<div class="col-12 box-empresa arrow bg-white pt-5 pb-5" id="descricao">
+						<div class="d-flex" style="margin-right: -15px;margin-left: -15px;">
+							<div class="col-1 position-relative">
+								<h4 class="color-green-transparent text-nowrap box-empresa-title">
+									<b><i>DESCRIÇÃO</i></b>
+								</h4>
+							</div>
+							<div class="col-11">
+								<h3 class="mb-3"><b><i>Sobre a Empresa</i></b></h3>
+								<p class="color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p class="color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end SOBRE A EMPRESA -->
+					<!-- VIDEO -->
+					<div class="col-12 box-empresa bg-white pt-5 pb-5 mt-3" id="video">
+						<div class="d-flex" style="margin-right: -15px;margin-left: -15px;">
+							<div class="col-1 position-relative">
+								<h4 class="color-blue-dark text-nowrap box-empresa-title">
+									<b><i>VÍDEO DESTAQUE</i></b>
+								</h4>
+							</div>
+							<div class="col-11">
+								<iframe width="100%" height="500px" src="https://www.youtube.com/embed/Bey4XXJAqS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<!-- end VIDEO -->
+					<!-- PRODUTOS E SERVIÇOS -->
+					<div class="col-12 box-empresa bg-white pt-5 pb-5 mt-3" id="categoria">
+						<div class="d-flex" style="margin-right: -15px;margin-left: -15px;">
+							<div class="col-1 position-relative">
+								<h4 class="color-green-transparent text-nowrap box-empresa-title">
+									<b><i>CATEGORIAS</i></b>
+								</h4>
+							</div>
+							<div class="col-11">
+								<h3 class="mb-3"><b><i>Produtos e serviços</i></b></h3>
+								<p class="text-uppercase mb-2"><b><i>ACESSÓRIOS / PEÇAS</i></b></p>
+								<!-- LISTA -->
+								<ul class="list-unstyled colunas">
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>SENSOR DE OXIMETRIA</i></p></li>
+								</ul>
+								<div class="row">
+									<div class="col">
+										<p class="text-uppercase mb-2"><b><i>ANALISADORES / SIMULADORES</i></b></p>
+										<ul class="list-unstyled">
+											<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>EGC</i></p></li>
+										</ul>
+									</div>
+									<div class="col">
+										<p class="text-uppercase mb-2"><b><i>ANALISADORES / SIMULADORES</i></b></p>
+										<ul class="list-unstyled">
+											<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>Bomba Centrífuga</i></p></li>
+											<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>Torniquete / Garrote Pneumático</i></p></li>
+										</ul>
+									</div>
+								</div>
+								<p class="text-uppercase mb-2"><b><i>Assessoria</i></b></p>
+								<ul class="list-unstyled">
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>Prototipagem</i></p></li>
+									<li><p class="text-uppercase mb-0"><i class="fa fa-check color-blue-sky mr-2" aria-hidden="true"></i><i>Marketing</i></p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- GALERIA -->
+					<div class="col-12 box-empresa bg-white pt-3 pb-2 mt-3" id="galeria">
+						<div class="d-flex" style="margin-right: -15px;margin-left: -15px;">
+							<div class="col-1 position-relative">
+								<h4 class="color-green-transparent text-nowrap box-empresa-title">
+									<b><i>GALERIA</i></b>
+								</h4>
+							</div>
+							<div class="col-11 galeria-images">
+								<div class="row pl-2 pr-4">
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+									<img class="d-inline-block col-lg-3 col-md-4 col-sm-4 col-6 pl-0 pr-1 mb-1" src="./vendors/images/interna-fornecedor/galeria-item.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end GALERIA -->
+					<!-- BOTÕES -->
+					<div class="row mt-3 mb-3">
+						<div class="col">
+							<h3 class="mb-0"><a href="" class="text-center p-3 d-inline-block w-100 rounded background-blue-light color-blue-dark text-truncate">
+								<b><i><span class="fa fa-user-circle-o" aria-hidden="true"></span> FALAR COM UM CONSULTOR</i></b>
+							</a></h3>
+						</div>
+						<div class="col order-1">
+							<h3 class="mb-0"><a href="" class="text-center p-3 d-inline-block w-100 rounded background-blue-dark text-white text-truncate">
+								<b><i>PEDIR ORÇAMENTO</i></b>
+							</a></h3>
+						</div>							
+					</div>
+					<!-- end BOTÕES -->
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12 pt-4 pt-xs-0">
+					<!-- CONTATO -->
+					<div class="col-12 text-center box-empresa bg-white pt-4 pb-4">
+						<div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1 co-12">
+							<h3 class="mb-3"><b><i>Contato</i></b></h3>
+							<img src="./vendors/images/interna-fornecedor/photo.png" class="img-responsive d-block mx-auto col-md-4 col-sm-4 col-5 mb-2 rounded-circle" />
+							<p class="color-gray text-uppercase mb-0"><b>Antônio Martinez</b></p>
+							<p class="legend color-gray"><small>Consultor de vendas</small></p>
+							<p class="mt-2 color-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco.</p>
+							<h4 class="text-center text-truncate mt-2">
+								<a href="#" class="legend btn-border w-100 d-block color-white background-blue-dark pt-2 pb-2 text-truncate">Pedir Orçamento</a>
+							</h4>
+						</div>
+					</div>
+					<!-- end CONTATO -->
+					<!-- AVALIAÇÕES -->
+					<div class="col-12 text-center box-empresa bg-white pt-4 pb-4 pl-2 pr-2 mt-3">
+						<h3 class="mb-3"><b><i>Avaliações</i></b></h3>
+						<div class="carousel carousel-fornecedor-interno text-left">
+						  	<div class="pt-3 pb-3">
+						  		<div class="col-md-12">
+									<div class="box-rounded-white cursor-pointer pr-4 pl-4 pt-2 pb-3 position-relative">
+										<img src="./vendors/images/interna-fornecedor/photo.png" class="box-rounded-white-profile mb-3">
+										<h3 class="position-absolute mt-3 mr-3" style="right: 0px;top: 0px;">
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-gray-default" aria-hidden="true"></i>
+										</h3>
+										<p class="color-gray">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit.</p>
+										<div class="row">
+											<div class="col-md-8 col-sm-6 col-6">
+												<p class="name color-black mt-0 mb-1"><b><i>Kevin Parkey</i></b></p>
+												<p class="carrer mt-0 mb-0 legend"><small>UX/UI Graphic Designer</small></p>
+											</div>
+											<div class="col-md-3 offset-md-0 col-sm-2 offset-sm-4 col-3 offset-3">
+												<img src="./vendors/images/027.png" width="100%">
+											</div>
+										</div>
+									</div>
+									<h4 class="text-right mt-2">
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-gray" aria-hidden="true"></i>
+										<span class="legend font-weight-normal">50 Avaliações</span>
+									</h4>
+								</div>
+						  	</div>
+						  		<div class="pt-3 pb-3">
+						  		<div class="col-md-12">
+									<div class="box-rounded-white cursor-pointer pr-4 pl-4 pt-2 pb-3 position-relative">
+										<img src="./vendors/images/interna-fornecedor/photo.png" class="box-rounded-white-profile mb-3">
+										<h3 class="position-absolute mt-3 mr-3" style="right: 0px;top: 0px;">
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+											<i class="fa fa-star color-gray-default" aria-hidden="true"></i>
+										</h3>
+										<p class="color-gray">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit.</p>
+										<div class="row">
+											<div class="col-md-8 col-sm-6 col-6">
+												<p class="name color-black mt-0 mb-1"><b><i>Kevin Parkey</i></b></p>
+												<p class="carrer mt-0 mb-0 legend"><small>UX/UI Graphic Designer</small></p>
+											</div>
+											<div class="col-md-3 offset-md-0 col-sm-2 offset-sm-4 col-3 offset-3">
+												<img src="./vendors/images/027.png" width="100%">
+											</div>
+										</div>
+									</div>
+									<h4 class="text-right mt-2">
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-yellow" aria-hidden="true"></i>
+										<i class="fa fa-star color-gray" aria-hidden="true"></i>
+										<span class="legend font-weight-normal">50 Avaliações</span>
+									</h4>
+								</div>
+						  	</div>
+						</div>	
+					</div>
+					<!-- end AVALIAÇÕES -->
+					<!-- CATEGORIAS -->
+					<div class="col-12 box-empresa bg-white pt-4 pb-4 mt-3 pl-0 pr-0 desabled">
+						<h3 class="mb-3 text-center"><b><i>Categorias</i></b></h3>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b class="min">Acessórios e Peças</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Analisadores e simuladores"><b>Analisadores e simuladores</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Hospitalar"><b>Equipamento Hospitalar</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa active mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Assessoria"><b>Assessoria</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Veterinário"><b>Equipamento Veterinário</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Mobiliário"><b>Mobiliário</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Calibração, Laudos e Testes"><b>Calibração, Laudos e Testes</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamentos Odontológicos"><b>Equipamentos Odontológicos</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Infraestrutura"><b>Infraestrutura</b> <span class="legend">500</span></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Equipamento Laboratorial"><b>Equipamento Laboratorial</b> <span class="legend">500</span></a>
+						</p>
+					</div>
+					<!-- end CATEGORIAS -->
+				</div>
+			</div>	
+		</div>
+		<!-- VEJA OS PARCEIROS DISPONÍVEIS -->
+		<div class="col-12 back-degrade-dark pt-4 pb-5 mt-5">
+			<div class="row centralizar-verticalmente">
+				<div class="col-md-6 offset-md-1 col-sm-12 col-12 mb-2">
+					<h2 class="color-white text-center-xs"><i><b>Não encontrou o que procurava?</b></i></h2>
+					<p class="color-white text-center-xs">Refaça sua pesquisa ou veja a lista completa de parceiros. São mais de 1000 esperando você!</p>
+				</div>
+				<div class="col-md-5 col-sm-12 col-12 text-center mt-2">
+					<p>
+						<a href="#" class="btn-border color-white border-white mr-1 ml-1 p-2 pl-3 pr-3 text-truncate">VOLTAR A PESQUISA</a>
+						<a href="#" class="btn-border color-white border-white mr-1 ml-1 p-2 pl-3 pr-3 text-truncate">VER LISTA COMPLETA</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- END VEJA OS PARCEIROS DISPONÍVEIS -->
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="pb-0 background-footer">
+		<div class="footer-datas mb-2 col-md-10 offset-md-1 col-sm-12 col-12 background-blue-light z-index-top margin-top-negative pt-4 pb-4">
+			<div class="col-md-10 offset-md-1 col-sm-12 col-12">
+				<div class="row centralizar-verticalmente">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<a class="navbar-brand font-weight-bold text-truncate" href="#">
+							<img src="./vendors/images/icon-white.png" height="30px" />
+	  					</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+							<i class="icon fa fa-phone color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i> 
+							+55 (11) 3285-5665
+							<span class="color-blue-dark">
+								<!-- Seg-Sex  -->8am-18pm
+							</span>
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+								<i class="icon fa fa-at color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i>
+								contato@healthcarealliance.com.br
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<h4 class="mb-0 text-left text-center-xs d-md-flex d-sm-flex d-inline-block">
+							<b>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+							</b>
+							<div class="select-language-box d-md-block d-sm-none d-none">	
+								<div class="select-language p-0 ml-2" 
+									data-input-name="country"
+	                        		data-selected-country="BR"
+	                        		data-countries='{"BR": "","US": ""}'>	                        		
+	                        	</div>			
+							</div>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 pt-4 pb-4">
+					<div class="row mb-5">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-md-block d-sm-none d-none">
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit. Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Contratantes</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Parceiros</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-12 text-center-xs d-md-none d-block mb-3">
+							<p class="color-white mb-2"><b>Sobre a Healthcarealliance</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Donec condimentum luctus libero et dapibus.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center-xs">
+							<p class="color-white mb-2"><b>Cadastre-se na Newsletter</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis.</p>
+							<form class="form-newsletter">
+		  						<div class="form-row align-items-center">
+		  							<div class="input-group mb-2">
+		    							<input type="mail" class="form-control" placeholder="E-mail">
+		  								<button type="submit" class="btn rounded-0 background-blue-light">
+		  									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		  								</button>
+		  							</div>
+		  						</div>
+							</form>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="col-md-5 pr-0 d-md-block d-sm-none d-none">
+							<ul class="list-inline list-footer border-list-footer">
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Sobre Nós</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Como Funciona</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Parceiros</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Contato</a></b></p></li>
+							</ul>
+						</div>
+						<div class="col-md-7 pl-0 col-12 pl-xs-0">
+							<p class="pt-4 text-right legend color-white mb-0 border-list-footer text-center-xs">
+								<b class="min">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 <span class="color-green">Healthcare Aliance</span>. Desenvolvimento por Hammer Consult.</b>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+					<p class="color-white font-weight-bold list-vertical-text cursor-pointer scroll" data-scroll="topo">		
+						Subir ao topo
+						<i class="fa fa-arrow-up color-green ml-2" aria-hidden="true"></i>
+						<b class="color-green">|</b>
+					</p>
+				</div>				
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+	
+	<!-- MODAL LOGIN -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      				<span aria-hidden="true">&times;</span>
+    			</button>
+      			<div class="modal-body pt-5 pb-5">
+        			<h3 class="font-weight-bold text-center mb-3" href="#">
+  						<span class="color-blue-dark">healthcare</span><span class="color-blue-light">alliance</span>
+  					</h3>
+  					<h4 class="text-center mb-2"><b>Entrar</b></h4>
+  					<p class="text-center color-gray legend">
+  						<i>Digite seus dados para acessar seu Dashboard</i>
+  					</p>
+  					<div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 p-3 rounded border-login">
+  						<form class="form-style">
+	  						<div class="form-group">
+	    						<label for="user"><b>Usuário</b></label>
+	    						<input type="email" class="form-control rounded" id="user" placeholder="E-mail">
+	  						</div>  
+	  						<div class="form-group">
+	    						<label for="password"><b>Senha</b></label>
+	    						<input type="password" class="form-control rounded" id="password" placeholder="******">
+	  						</div>  
+	  						<div class="form-group">
+	  							<div class="row d-flex align-items-center">
+	  								<div class="col">
+	  									<button type="submit" class="btn btn-border pl-3 pr-3 color-white background-blue-dark pt-1 pb-2 w-100"><i><b class="min">Enviar</b></i></button>
+	  								</div>
+	  								<div class="col text-center">
+							  	        <input class="form-check-input checkbox-style-black" type="checkbox" value="" id="lembrar_me">
+							  			<label class="form-check-label cursor-pointer color-gray ml-1" for="lembrar_me">
+							    			<b>Lembrar-me</b>
+							  			</label>
+	  								</div>
+	  							</div>
+	  						</div>							
+  						</form>
+  					</div>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+	<!-- end MODAL LOGIN -->
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="./vendors/js/popper.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery/jquery-3.4.0.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./vendors/slick/slick.js"></script>
+	<script type="text/javascript" src="./vendors/script.js"></script>
+	<script type="text/javascript" src="./vendors/js/fornecedor-interno.js"></script>
+	<script src="./vendors/flags/js/jquery.flagstrap.js"></script>
+	<!-- END SCRIPT -->
+
+</body>
+</html>
